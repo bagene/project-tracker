@@ -34,6 +34,43 @@ For local development, you can run:
 composer dev
 ```
 
+## Features Implemented
+
+-   **Full Project CRUD**: Create, read, update, and delete projects.
+-   **Advanced Filtering**: Filter projects by status, priority, and date ranges.
+-   **Action-Based Architecture**: Business logic is encapsulated in discrete Action classes for better maintainability.
+-   **Type Safety**: Extensive use of PHP 8.4+ features including readonly classes, constructor property promotion, and Enums.
+-   **Standardized API Responses**: Uses Eloquent API Resources for consistent JSON output.
+-   **Automated Setup**: Streamlined environment configuration via a single `composer setup` command.
+
+## Setup Instructions
+
+### Prerequisites
+
+-   **PHP 8.5+**
+-   **Composer**
+-   **Node.js & NPM**
+-   **SQLite** (default database)
+
+### Installation
+
+1.  **Clone the repository**:
+    ```bash
+    git clone <repository-url>
+    cd project-track
+    ```
+
+2.  **Run the setup script**:
+    This script will install dependencies, set up the environment file, generate the app key, and run migrations.
+    ```bash
+    composer setup
+    ```
+
+3.  **Start the development server**:
+    ```bash
+    composer dev
+    ```
+
 ## Linting and PHPStan
 
 The project uses **Laravel Pint** for code style and **PHPStan** (Larastan) for static analysis.
